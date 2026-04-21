@@ -1,0 +1,21 @@
+@baseUrl = http://localhost:3000
+
+### welcome message
+GET {{baseUrl}}/welcome
+### Get all users
+GET {{baseUrl}}/users
+### post name
+POST {{baseUrl}}/submit
+Content-Type: application/json
+
+{
+  "name": "Ashwaq"
+}
+### Create a new user
+POST {{baseUrl}}/create
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com"
+}
